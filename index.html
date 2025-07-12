@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Precious Lamb Inspired Site</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .bg-purple {
+        background-color: #6f42c1 !important;
+      }
+      .btn-purple {
+        background-color: #6f42c1;
+        color: white;
+        border: none;
+      }
+      .btn-purple:hover {
+        background-color: #5936a9;
+      }
+      .nav-link,
+      .navbar-brand {
+        color: white !important;
+      }
+      .nav-link:hover {
+        color: #ddd !important;
+      }
+      .carousel-item img {
+        height: 600px;
+        object-fit: cover;
+      }
+
+      .card-img-top {
+        height: 250px;
+        object-fit: cover;
+      }
+      .card-img-container {
+        overflow: hidden;
+        height: 250px;
+      }
+
+      .card-img-container img {
+        height: 100%;
+        width: 100%;
+        transition: all transform 0.3s;
+      }
+
+      .card-img-container img:hover {
+        transform: scale(1.15);
+      }
+      .carousel-caption h1,
+      .carousel-caption p {
+        color: white;
+        text-shadow: 2px 2px 5px black;
+      }
+    </style>
+  </head>
+  <link rel="icon" href="icon.png" type="image/png" />
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-purple shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Precious</a>
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#programs">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#donate">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Slider Section -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="11.avif" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block text-white">
+            <h1 class="fw-bold" class="fw-bold text-purple">
+              Empowering Afghan Girls Through Education
+            </h1>
+            <p class="fw-bold text-purple">
+              We believe every Afghan girl deserves access to safe, quality
+              education.
+            </p>
+            <a href="#about" class="btn btn-purple">Learn More</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="3.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block text-white">
+            <h1 class="fw-bold" class="fw-bold text-purple">
+              Breaking Barriers with E-Schooling
+            </h1>
+            <p class="fw-bold text-purple">
+              We create access to online learning tools that help girls grow in
+              language, technology, and self confidence—wherever they are.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="13.jpeg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block text-white">
+            <h1 class="fw-bold" class="fw-bold text-purple">
+              Digital Classrooms for Afghan Girls
+            </h1>
+            <p class="fw-bold text-purple">
+              We connect Afghan girls to safe, online learning spaces empowering
+              them through language, technology, and creative exploration.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#heroCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Programs Section -->
+    <style>
+      .service-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+
+    <section class="py-5 bg-light" id="services">
+      <div class="container">
+        <h2 class="text-center mb-5">Our Services</h2>
+        <div class="row g-4 text-center">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card service-card h-100 border-0 shadow-sm">
+              <img
+                src="8.jpg"
+                class="card-img-top"
+                alt="Language & Literacy Courses"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Language & Literacy Courses</h5>
+                <p class="card-text">
+                  Girls can access online Dari, Pashto, and English courses from
+                  beginner to advanced building confidence and communication
+                  skills.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card service-card h-100 border-0 shadow-sm">
+              <img src="9.jpg" class="card-img-top" alt="E-School Support" />
+              <div class="card-body">
+                <h5 class="card-title">E-School Support</h5>
+                <p class="card-text">
+                  We provide tools and tutoring to help girls thrive in digital
+                  classrooms, even in areas with limited resources.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card service-card h-100 border-0 shadow-sm">
+              <img
+                src="10.jpg"
+                class="card-img-top"
+                alt="Tech & Future Skills"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tech & Future Skills</h5>
+                <p class="card-text">
+                  Through coding, digital design, and STEM courses, girls
+                  prepare for tomorrow’s careers and become problem-solvers in
+                  their communities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Mission Section with Purple Background -->
+    <section id="about" class="bg-purple text-white py-5">
+      <div class="container">
+        <h2 class="text-center">Our Mission</h2>
+        <p class="mx-auto text-center mt-3" style="max-width: 700px">
+          Our mission is to ensure Afghan girls don’t get left behind. With
+          internet access and engaging digital tools, we help them learn at
+          their pace safely, freely, and with purpose.
+        </p>
+      </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate" class="py-5 text-center">
+      <div class="container">
+        <h2>Support Our Cause</h2>
+        <p class="mx-auto text-center mt-3" style="max-width: 700px">
+          Your gift provides internet access, laptops, and course fees giving
+          girls in remote areas the power to learn and succeed online.
+        </p>
+        <a href="#" class="btn btn-purple btn-lg">Donate Now</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Get In Touch</h2>
+        <p class="mx-auto text-center mt-3" style="max-width: 700px">
+          Are you an educator, volunteer, or tech trainer? Join our network to
+          deliver digital learning opportunities to Afghan girls across the
+          country.
+        </p>
+        <form class="mx-auto" style="max-width: 600px">
+          <div class="mb-3">
+            <label>Name</label>
+            <input type="text" class="form-control" placeholder="Your name" />
+          </div>
+          <div class="mb-3">
+            <label>Email</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Email address"
+            />
+          </div>
+          <div class="mb-3">
+            <label>Message</label>
+            <textarea
+              class="form-control"
+              rows="4"
+              placeholder="How can we help?"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-purple">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-purple text-white text-center py-3">
+      <p>&copy; 2025 Made by Love.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
